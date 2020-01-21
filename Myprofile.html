@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Profile</title>
+		<link rel="stylesheet"href=style1.css>
+	</head>
+    <style>
+    body {
+        background-color : violet;
+    }
+    h1 {
+        color:white;
+    }
+    h2, h3 {
+        color : skyblue;
+    }
+
+    
+    @media only screen and (min-width:768px) {
+        body {
+            background-color:skyblue;
+        }
+        
+    }
+
+    @page {
+        size : landscape;
+    }
+    
+    @media print {
+        body {
+            background-color : blue;
+        }
+        
+        h1, h2, h3 {
+            color : black;
+        }
+        nav {
+            display : none;
+        }
+        a::after {
+            content : " <" attr(href) ">";
+            color:lightcoral;
+        }
+    }
+
+</style>
+
+	<body>
+		
+		<header>
+                  <img src="img.jpg"alt="U are not able to access"align="left"width="100"height="100">	
+		    <center> <h1>MyProfile</h1>	</center>
+                     	
+		</header>
+				<nav>
+			        <a href="About.html"target="frm">About</a>
+				<a href="Education.html"target="frm">Education</a>
+				<a href="contact.html"target="frm">Contact</a>
+				</nav>
+				<section>
+				<iframe id="frm" name="frm"></iframe>
+				</section>
+			</body>
+</html>
